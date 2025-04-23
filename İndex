@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelin Tek Pilates Stüdyosu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom right, #f3f4f6 49.9%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600">PELİN TEK <span class="text-gray-700">PİLATES</span></div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-indigo-600 font-medium">Anasayfa</a>
+                <a href="#about" class="hover:text-indigo-600">Hakkımızda</a>
+                <a href="#classes" class="hover:text-indigo-600">Dersler</a>
+                <a href="#gallery" class="hover:text-indigo-600">Galeri</a>
+                <a href="#contact" class="hover:text-indigo-600">İletişim</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white pt-16">
+        <div class="container mx-auto px-6 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Pelin Tek Pilates Stüdyosu</h1>
+            <p class="text-xl md:text-2xl mb-8">Sağlıklı bir yaşam için doğru adres</p>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Ücretsiz Deneme Dersi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-divider"></div>
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Hakkımızda</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Pelin Tek" 
+                         class="rounded-lg shadow-xl hover-scale">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Pelin Tek Kimdir?</h3>
+                    <p class="mb-4 text-gray-600">15 yılı aşkın deneyimiyle Pilates eğitmenliği yapan Pelin Tek, uluslararası sertifikalara sahip uzman bir eğitmendir. Vücut farkındalığı ve doğru hareket teknikleri üzerine uzmanlaşmıştır.</p>
+                    <p class="mb-6 text-gray-600">Stüdyomuzda her yaş ve seviyeden katılımcıya özel programlar sunuyoruz. Amacımız, sadece fiziksel değil aynı zamanda zihinsel sağlığınıza da katkıda bulunmaktır.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-indigo-600 mr-3"><i class="fas fa-certificate text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Sertifikalı Eğitmenler</h4>
+                                <p class="text-sm text-gray-500">Uluslararası geçerlilik</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-indigo-600 mr-3"><i class="fas fa-heart text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Kişiye Özel</h4>
+                                <p class="text-sm text-gray-500">Birebir ders imkanı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ders Programımız</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Class 1 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover-scale">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80" 
+                         alt="Mat Pilates" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mat Pilates</h3>
+                        <p class="text-gray-600 mb-4">Temel pilates hareketleriyle başlayanlar için ideal ders.</p>
+                        <div class="flex justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="far fa-clock mr-1"></i> 60 dk</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> Max 8 kişi</span>
+                        </div>
+                        <a href="#contact" class="text-indigo-600 font-medium inline-flex items-center">Rezervasyon <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Class 2 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover-scale">
+                    <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Reformer Pilates" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Reformer Pilates</h3>
+                        <p class="text-gray-600 mb-4">Reformer aletiyle yapılan, tüm vücudu çalıştıran ders.</p>
+                        <div class="flex justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="far fa-clock mr-1"></i> 60 dk</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> Max 4 kişi</span>
+                        </div>
+                        <a href="#contact" class="text-indigo-600 font-medium inline-flex items-center">Rezervasyon <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Class 3 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover-scale">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                         alt="Hamile Pilatesi" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Hamile Pilatesi</h3>
+                        <p class="text-gray-600 mb-4">Hamilelik sürecini kolaylaştırmak için özel program.</p>
+                        <div class="flex justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="far fa-clock mr-1"></i> 45 dk</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> Max 6 kişi</span>
+                        </div>
+                        <a href="#contact" class="text-indigo-600 font-medium inline-flex items-center">Rezervasyon <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Stüdyomuzdan</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Pilates Studio" 
+                     class="w-full h-48 object-cover rounded-lg shadow hover-scale">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Pilates Instructor" 
+                     class="w-full h-48 object-cover rounded-lg shadow hover-scale">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80" 
+                     alt="Mat Pilates" 
+                     class="w-full h-48 object-cover rounded-lg shadow hover-scale">
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Reformer Pilates" 
+                     class="w-full h-48 object-cover rounded-lg shadow hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Katılımcı Yorumları</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Pelin Hanım'ın dersleri sayesinde bel ağrılarımdan kurtuldum. Profesyonel yaklaşımı ve ilgisi için çok teşekkür ederim."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" 
+                             alt="Ayşe K." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ayşe K.</h4>
+                            <p class="text-sm text-gray-500">6 aydır katılıyor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Hamile pilatesi dersleri sayesinde doğum sürecimi çok rahat geçirdim. Stüdyonun sıcak atmosferi de ayrı bir artı."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                             alt="Zeynep T." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Zeynep T.</h4>
+                            <p class="text-sm text-gray-500">Hamile pilatesi katılımcısı</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Reformer dersleriyle postürüm düzeldi ve kendimi çok daha iyi hissediyorum. Kesinlikle tavsiye ederim."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Mehmet E." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mehmet E.</h4>
+                            <p class="text-sm text-gray-500">3 aydır katılıyor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Bize Ulaşın</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-bold mb-6">İletişim Bilgileri</h3>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-xl mr-4 mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Adres</h4>
+                            <p>1234 Pilates Sokak, No:5<br>Beşiktaş, İstanbul</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-xl mr-4 mt-1"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Telefon</h4>
+                            <p>+90 555 123 45 67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="text-xl mr-4 mt-1"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Email</h4>
+                            <p>info@pelintekpilates.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="bg-white text-indigo-600 p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-indigo-100 transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white text-indigo-600 p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-indigo-100 transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white text-indigo-600 p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-indigo-100 transition">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Mesaj Gönderin</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Adınız Soyadınız" class="w-full px-4 py-3 rounded-lg bg-indigo-500 bg-opacity-20 border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-white">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Adresiniz" class="w-full px-4 py-3 rounded-lg bg-indigo-500 bg-opacity-20 border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-white">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Telefon Numaranız" class="w-full px-4 py-3 rounded-lg bg-indigo-500 bg-opacity-20 border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-white">
+                        </div>
+                        <div>
+                            <select class="w-full px-4 py-3 rounded-lg bg-indigo-500 bg-opacity-20 border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-white text-white">
+                                <option value="" disabled selected>İlgilendiğiniz Ders</option>
+                                <option value="mat">Mat Pilates</option>
+                                <option value="reformer">Reformer Pilates</option>
+                                <option value="hamile">Hamile Pilatesi</option>
+                                <option value="ozel">Özel Ders</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Mesajınız" class="w-full px-4 py-3 rounded-lg bg-indigo-500 bg-opacity-20 border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-indigo-100 transition w-full">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold text-indigo-400">PELİN TEK <span class="text-white">PİLATES</span></div>
+                    <p class="text-gray-400 mt-2">Sağlıklı bir yaşam için doğru adres</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pelin Tek Pilates Stüdyosu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Run once on load
+            fadeInOnScroll();
+            
+            // Run on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
+</body>
+</html>
